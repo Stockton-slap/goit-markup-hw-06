@@ -209,6 +209,8 @@ body {
   width: 206px;
   height: 80px;
   flex-direction: column;
+
+  margin-right: 93px;
 }
 
 .container.order {
@@ -272,4 +274,40 @@ body {
 .footer-list:hover,
 .footer-list:focus {
   background-color: var(--accent-color);
+}
+
+.footer-form {
+  width: 570px;
+  height: 86px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-email-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  border-radius: 4px;
+
+  padding-left: 16px;
+  margin-right: 12px;
+
+  background-color: inherit;
+}
+
+.button.subscribe {
+  display: flex;
+  align-items: center;
+  padding-left: 29px;
+}
+
+.footer-button-icon {
+  margin-left: 10px;
 }
