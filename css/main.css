@@ -179,7 +179,9 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+}
 
+.form-comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -221,11 +223,17 @@
   height: 15px;
   border-radius: 2px;
   border: 2px solid var(--secondary-text-color);
+
+  margin-right: 8px;
 }
 
 .checkbox-input:checked + .checkbox-icon {
   background-color: var(--accent-color);
   border: transparent;
+}
+
+.checkbox-link {
+  color: var(--accent-color);
 }
 
 .form-input:focus ~ .form-icon {
