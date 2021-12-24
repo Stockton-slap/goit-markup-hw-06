@@ -113,8 +113,8 @@
   cursor: pointer;
 }
 
-.button-icon:hover,
-.button-icon:focus {
+.button-close:hover .button-icon,
+.button-close:focus .button-icon {
   fill: var(--accent-color);
 }
 
