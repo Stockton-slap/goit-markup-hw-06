@@ -217,11 +217,13 @@
 
   margin-bottom: 30px;
   margin-top: 20px;
-  display: block;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .checkbox-input {
-  appearance: none;
   -webkit-appearance: none;
 }
 
@@ -241,6 +243,7 @@
 
 .checkbox-link {
   color: var(--accent-color);
+  padding-left: 4px;
 }
 
 .button.submit {
