@@ -19,7 +19,7 @@
   background-position: center;
 }
 
-.hero > .hero-title {
+.hero-title {
   color: var(--hero-text-color);
 
   margin-top: 0;
@@ -78,6 +78,7 @@
   left: 50%;
   width: 528px;
   height: 581px;
+
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-duration) linear;
 
@@ -130,6 +131,22 @@
 .form-field {
   position: relative;
 }
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  display: flex;
+
+  color: var(--primary-text-color);
+}
+
+.form-container {
+  position: relative;
+}
+
 .form-input {
   width: 100%;
   height: 40px;
@@ -145,21 +162,6 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-.form-label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  display: flex;
-
-  color: var(--primary-text-color);
-}
-.form-icon {
-  position: absolute;
-  top: 0;
-  left: 14px;
-}
 
 .form-input:focus ~ .form-icon {
   fill: var(--accent-color);
@@ -168,6 +170,12 @@
 .form-input:focus {
   border: 1px solid var(--accent-color);
   outline: 0;
+}
+
+.form-icon {
+  position: absolute;
+  top: 0;
+  left: 14px;
 }
 
 .form-comment {
@@ -199,10 +207,6 @@
   color: var(--secondary-text-color);
 }
 
-.form-container {
-  position: relative;
-}
-
 .checkbox-label {
   font-weight: normal;
   font-size: 14px;
@@ -218,8 +222,22 @@
   display: flex;
 }
 
-.checkbox-input {
-  -webkit-appearance: none;
+.checkbox-label > .visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.checkbox-label > .visually-hidden:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  border: transparent;
 }
 
 .checkbox-icon {
@@ -232,18 +250,9 @@
   margin-bottom: 4px;
 }
 
-.checkbox-input:checked + .checkbox-icon {
-  background-color: var(--accent-color);
-  border: transparent;
-}
-
 .checkbox-link {
   color: var(--accent-color);
   margin-left: 4px;
-}
-
-.button.submit {
-  margin-bottom: 40px;
 }
 
 /* OUR FEATURES */
